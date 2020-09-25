@@ -1,0 +1,97 @@
+{
+	"definitions": {},
+	"$schema": "http://json-schema.org/draft-07/schema#", 
+	"$id": "https://example.com/object1601025800.json", 
+	"title": "Root", 
+	"type": "object",
+	"required": [
+		"jobname",
+		"file"
+	],
+	"properties": {
+		"jobname": {
+			"$id": "#root/jobname", 
+			"title": "Jobname", 
+			"type": "object",
+			"required": [
+				"type",
+				"title",
+				"required"
+			],
+			"properties": {
+				"type": {
+					"$id": "#root/jobname/type", 
+					"title": "Type", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"string"
+					],
+					"pattern": "^.*$"
+				},
+				"title": {
+					"$id": "#root/jobname/title", 
+					"title": "Title", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"Enter Job Name"
+					],
+					"pattern": "^.*$"
+				},
+				"required": {
+					"$id": "#root/jobname/required", 
+					"title": "Required", 
+					"type": "boolean",
+					"examples": [
+						true
+					],
+					"default": true
+				}
+			}
+		}
+,
+		"file": {
+			"$id": "#root/file", 
+			"title": "File", 
+			"type": "object",
+			"required": [
+				"type",
+				"title",
+				"required"
+			],
+			"properties": {
+				"type": {
+					"$id": "#root/file/type", 
+					"title": "Type", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"file"
+					],
+					"pattern": "^.*$"
+				},
+				"title": {
+					"$id": "#root/file/title", 
+					"title": "Title", 
+					"type": "string",
+					"default": "",
+					"examples": [
+						"Please give file name"
+					],
+					"pattern": "^.*$"
+				},
+				"required": {
+					"$id": "#root/file/required", 
+					"title": "Required", 
+					"type": "boolean",
+					"examples": [
+						true
+					],
+					"default": true
+				}
+			}
+		}
+
+	}
+}
